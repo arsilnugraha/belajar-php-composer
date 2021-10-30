@@ -10,7 +10,8 @@ class Customer {
       
    }
 
-   public function sayHello(string $name){
-      echo "Hello $name, My Name is $this->name";
+   public function sayHello(string $name = "Guest"): string
+   {
+      return "Hello $name, My Name is $this->name";
    }
 }
